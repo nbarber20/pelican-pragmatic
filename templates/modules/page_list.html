@@ -1,0 +1,13 @@
+{% for article in articles_page.object_list %}
+<article class="article-summary">
+        <div class="article-header"> 
+            <h2 class="article-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+            <time class="article-date" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+        </div>
+        <div class="article-content"> {{ article.summary }} </div>
+</article>
+{% endfor %}
+
+{% if articles_page.has_other_pages() %}
+    {% include "modules/pagination.html" %}
+{% endif %}

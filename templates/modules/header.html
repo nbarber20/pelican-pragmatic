@@ -1,0 +1,41 @@
+<header>
+    <div class="header-atlas">
+        {% if SITELOGO %}
+            <img class="atlas-icon" src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
+        {% endif %}
+
+        {% if LINKS %}
+        <div>
+            {% for name, link in LINKS %}
+                <a class="atlas-link" href="{{ link }}" >{{ name }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="header-title">
+        <h1>{{ SITETITLE }}</h1>
+
+        {% if SITESUBTITLE %}
+        <h4>{{ SITESUBTITLE }}</h4>
+        {% endif %}
+
+        {% if SOCIAL %}
+        <div class="header-social">
+            {% for name, link in SOCIAL %}
+            <a class="sc-{{ name }}"
+                {% if name in relme %}rel="me"{% endif %}
+                href="{{ link }}"
+                target="_blank">
+                <i class="fa-brands fa-{{ name }}"></i>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    
+    <div class="header-spacer">
+    </div>
+</header>
+    

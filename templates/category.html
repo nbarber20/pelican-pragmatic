@@ -1,8 +1,11 @@
-{% extends "index.html" %}
-
-{% block title %}{{ SITENAME }} - {{ category }} category{% endblock %}
-
-{% block content_title %}
-<h1>Articles in the {{ category }} category</h1>
-{% endblock %}
-
+{% extends "base.html" %}
+{% include "modules/blog_header.html" %}
+{% block content %}
+<section id="content">
+    <div class="pagination">
+        <a class="btn-left" href="{{ SITEURL }}/blog">&lt;&lt;</a>
+        <p class="pagenum">  Category: {{category}}</p>
+    </div>
+{% include "modules/page_list.html" %}
+</section>
+{% endblock content %}

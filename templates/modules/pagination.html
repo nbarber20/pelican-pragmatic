@@ -1,0 +1,15 @@
+<div class="pagination">
+{% if articles_page.has_previous() %}
+  <a class="btn-left" href="{{ SITEURL }}/{{ articles_previous_page.url }}">&lt;&lt;</a>
+  {% else%}
+  <div class="btn-spacer"></div>
+{% endif %}
+
+<p class="pagenum">{{articles_page.number}}</p>
+
+{% if articles_page.has_next() %}
+  <a class="btn-right" href="{{ SITEURL }}/{{ articles_next_page.url }}">&gt;&gt;</a>
+{% else%}
+<div class="btn-spacer"></div>
+{% endif %}
+</div>
