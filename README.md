@@ -1,5 +1,5 @@
 # pelican-pragmatic
-A pelican theme
+A pelican theme focused around portfolio work - used for my personal website
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
