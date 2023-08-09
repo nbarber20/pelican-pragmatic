@@ -477,21 +477,21 @@ header h4 {
 
 .article-summary {
   width: auto;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
 .article-full {
   width: auto;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
 .portfolio-entry {
-  max-width: 98%;
+  max-width: 100%;
 }
 }
