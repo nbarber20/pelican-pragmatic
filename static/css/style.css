@@ -128,6 +128,12 @@ h6 a {
   font-family: BebasNeue Bold;
 }
 
+iframe {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
 /* Portfolio */
 .portfolio {
   display: flex;
@@ -282,6 +288,12 @@ article.dark {
   padding-bottom: 30px;
   font-family: Cambria;
   white-space: break-spaces;
+}
+
+.article-content p a{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* Pagination */
