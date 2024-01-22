@@ -275,10 +275,17 @@ article.dark {
 .article-title {
   display: inline-block;
   padding-right: 10px;
-  padding-right: 10px;
   vertical-align: middle;
   text-align: left;
   font-size: 2.75em;
+}
+
+.contact-title {
+  display: block;
+  text-align: center;
+  font-size: 2.75em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .article-info {
@@ -462,12 +469,14 @@ footer {
 
 /* Misc */
 .contact-icon{
-  width: 15%;
+  display: block;
+  width: 10em;
   height: auto;
-  float: left;
-  margin-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10px;
-  border: 1px solid #413f3e;
+  border: 10px solid #413f3e;
+  border-radius: 5%;
 }
 
 /* Mobile */
