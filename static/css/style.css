@@ -530,4 +530,11 @@ header h4 {
 .portfolio-entry {
   max-width: 100%;
 }
+
+p img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}
 }
