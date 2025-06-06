@@ -5,7 +5,10 @@
     <div class="article-header"> 
         <h2 class="contact-title">{{ CONTACTTITLE }}</h2>
     </div>
-    <img class="contact-icon" src="{{ AUTHORIMAGE }}" alt="{{ Author }}" title="{{ Author }}">
-    <div class="article-content">{{ CONTACTCONTENT }}</div>
+    <div class="contact-content">
+	
+		<img class="contact-icon" src="{{ AUTHORIMAGE }}" alt="{{ Author }}" title="{{ Author }}">
+		<span class="contact-text">{{ CONTACTCONTENT }}</span>
+	</div>
   </article>
 {% endblock %}

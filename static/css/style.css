@@ -280,14 +280,6 @@ article.dark {
   font-size: 2.75em;
 }
 
-.contact-title {
-  display: block;
-  text-align: center;
-  font-size: 2.75em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .article-info {
   display: inline-block;
   padding-right: 10px;
@@ -468,15 +460,35 @@ footer {
 }
 
 /* Misc */
-.contact-icon{
+.contact-title {
   display: block;
-  width: 10em;
-  height: auto;
+  text-align: center;
+  font-size: 2.75em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+}
+
+.contact-content {
+  display: flex;
+  padding: 30px;
+}
+
+.contact-icon{
+  width: auto;
+  height: 15vw;
   border: 10px solid #413f3e;
   border-radius: 5%;
+}
+
+.contact-text{
+  font-family: Cambria;
+  white-space: break-spaces;
+  font-size: 1.25em;
+  text-align: left;
+  padding-left: 5em;
+  padding-right: 5em;
+  align-self: flex-end;
+  margin: 0 auto;
 }
 
 /* Mobile */
